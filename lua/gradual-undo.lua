@@ -15,6 +15,8 @@ function M.jump_to_last_undo_position_or_undo()
     if cursor_position_before[index] ~= cursor_position_after[index] then
       vim.api.nvim_command('redo')
 
+      print('gradual-undo: Jumped to last undo location')
+
       return
     end
   end
