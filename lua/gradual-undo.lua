@@ -1,4 +1,4 @@
-M = {}
+local M = {}
 
 local function get_cursor_position()
   return vim.fn.getpos('.')
