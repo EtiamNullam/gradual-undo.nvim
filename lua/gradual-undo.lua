@@ -20,4 +20,12 @@ function M.jump_to_last_undo_position_or_undo()
   end
 end
 
+function M.setup(opts)
+  opts = opts or {}
+
+  if opts.map_default_keys == true or opts.map_default_keys == nil then
+    vim.keymap.set('n', 'u', M.jump_to_last_undo_position_or_undo)
+  end
+end
+
 return M
