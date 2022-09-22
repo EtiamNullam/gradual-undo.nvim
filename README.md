@@ -18,7 +18,7 @@ Plug 'EtiamNullam/gradual-undo.nvim'
 require('gradual-undo').setup()
 ```
 
-...to load with default configuration, which will override `u` in `normal` mode.
+...to load with default configuration, which will override `u` and `<c-r>` in `normal` mode.
 
 ## Manual usage
 
