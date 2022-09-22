@@ -22,7 +22,11 @@ require('gradual-undo').setup()
 
 ## Manual usage
 
-Map to your own key of choice or invoke manually by:
+Map to your own keys of choice or invoke manually by:
+
 ```lua
-require('gradual-undo').jump_to_last_undo_position_or_undo()
+local gradual_undo = require('gradual-undo')
+
+gradual_undo.jump_to_last_undo_position_or_undo()
+gradual_undo.jump_to_last_redo_position_or_redo()
 ```
